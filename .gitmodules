@@ -1,7 +1,7 @@
-[submodule "884e3bc833cdf80fed9337ffee93a500"]
+[submodule "chords"]
 	path = chords
 	url = https://gist.github.com/Flare576/884e3bc833cdf80fed9337ffee93a500
-[submodule "fb8b42a6156458e20ca421a6f80cec48"]
+[submodule "caps"]
 	path = caps
 	url = https://gist.github.com/Flare576/fb8b42a6156458e20ca421a6f80cec48
 [submodule "qmk_config"]
