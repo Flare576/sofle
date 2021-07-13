@@ -20,6 +20,73 @@ Additionally, I'm drawing heavy inspiration from [tomsaleeba/ergoslab](https://g
 3. Design can't force me to learn too much simultaneously (I'm not a smrt person)
     - I feel like I'd benefit from Dvorak or another key layout, but if I'm being honest it'll be hard enough to re-learn where backspace and escape have gone.
 
+## Story so far
+
+It took ~1m for my order to arrive from Vietnam, but everything in the pack [looked
+great](https://photos.google.com/share/AF1QipPytwYjRgQrpOThUrlPG6qWIp5S8OndPnbsrqexxPabXPODnWopA66ABG0FQe4cjA/photo/AF1QipOLf71KHD0AHQfH8aAGOZoiONlIs6fTBdzb7Oof?key=UEFEb0ZQUkVDN1NiWVA3SVlDRjFIbkpuM2VZZ2d3).
+
+I didn't take build pictures (my excuse was that the [Build
+Guide](https://josefadamcik.github.io/SofleKeyboard/build_guide.html) is great and I didn't really
+have more to offer, but honestly I was just super excited to get going), but my n00b learnings are:
+
+- Set your iron to ~600°F to start (if you can adjust the temp)
+- Don't be afraid to hold the iron to the PCB solder points for a bit; once they get hot enough the
+    solder will literally flow from your iron into the joint.
+- If the solder flows, but still makes a ball, you need more flux. I started with [Pen
+    flux](https://www.amazon.com/gp/product/B07B53LNGX/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1),
+    but I never felt like it was helping. Very possible that the problem was user-related, so
+    I ordered some [Paste
+    Flux](https://www.amazon.com/gp/product/B008ZIV85A/ref=ppx_yo_dt_b_asin_title_o02_s01?ie=UTF8&psc=1)
+    to see if my monkey brain had better luck.
+- If you have to use desoldering wick (I really, really hope you don't):
+  - Always use the tip of the wick to start; if a lot is coming off the joint, try to move up the
+      wick
+  - Trim it between uses
+  - **CAUTION: I DON'T KNOW FOR SURE THAT THIS IS GOOD ADVICE** Try to get the thing you're
+      desoldering flat - desolder around pins, clip them, then finish desoldering while pushing the
+      pin through the hole.
+  - NEVER FORCE A PIN THROUGH
+    - If it doesn't slip through easily, trim the wick and try again. Forcing a pin can rip out the
+        contacts from the board - iz bad
+
+I started on the right-hand side and my first dozen joints were diodes and were slow and awful
+anyway. I didn't realize at the time, but I wasn't holding the iron to the board long enough to heat
+the contact, so I ended up with [diodes doing
+wheelies](https://photos.google.com/share/AF1QipPytwYjRgQrpOThUrlPG6qWIp5S8OndPnbsrqexxPabXPODnWopA66ABG0FQe4cjA/photo/AF1QipOyuV-xTKoda2hnScNfeE0UPADTrEcmlmQ0OBOs?key=UEFEb0ZQUkVDN1NiWVA3SVlDRjFIbkpuM2VZZ2d3).
+
+After a few mistakes and getting the hang of it a bit, I circled back around to fix them... don't do
+that. Mark the bad ones with tape or something, finish the step your on (in my case, do the rest of
+the diodes) and THEN come back - when you think you have enough experience to fix something, get 50%
+more experience and then try.
+
+Anyway, next was the hot swap switch sockets, which is where I first saw the "solder flow" thing I
+mentioned above; that was when the process really clicked for me... which is good because when I
+ultimately got to soldering the MCU on it wasn't _as_ terrifying.
+
+I tried to flash the right side, but none of the switches worked; I figured it was because it wasn't
+the "master" side, so I kept soldiering on.
+
+The left-side went quickly and smoothly, and flashing it worked immediately... but the right never
+worked.
+
+Thanks to the kind people on Reddit's [olkb subreddit](https://www.reddit.com/r/olkb), I got enough
+info to believe that the MCU was either broken or incompatible. I later determined that, based on
+the unit not updating its name on flash, there was something borked with the MCU.
+
+I desoldered the MCU ([wow did
+that](https://photos.google.com/share/AF1QipPytwYjRgQrpOThUrlPG6qWIp5S8OndPnbsrqexxPabXPODnWopA66ABG0FQe4cjA/photo/AF1QipNo28zbPFFA4ndrwGKWFcjzPhja6jrx9gsR8F8W?key=UEFEb0ZQUkVDN1NiWVA3SVlDRjFIbkpuM2VZZ2d3)
+suck a [whole
+lot](https://photos.google.com/share/AF1QipPytwYjRgQrpOThUrlPG6qWIp5S8OndPnbsrqexxPabXPODnWopA66ABG0FQe4cjA/photo/AF1QipMF6_peTZqLH6qSf1AQFrIG8laHn6n3-_RGKQ2F?key=UEFEb0ZQUkVDN1NiWVA3SVlDRjFIbkpuM2VZZ2d3)
+and make [my PCB super
+sad](https://photos.google.com/share/AF1QipPytwYjRgQrpOThUrlPG6qWIp5S8OndPnbsrqexxPabXPODnWopA66ABG0FQe4cjA/photo/AF1QipPE_pQJLTUqZGqHJGuis652Qns9bDk8m1QzN9C5?key=UEFEb0ZQUkVDN1NiWVA3SVlDRjFIbkpuM2VZZ2d3)),
+and mounted some [round header
+sockets](https://www.amazon.com/gp/product/B07BRYLMK8/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1).
+I linked to the things I SHOULD have bought the first time, but didn't. No, the first time I just
+bought the "female" round sockets, not realizing that the PINS ARE ROUND, TOO, so all the
+square-pegged male connectors I have won't work.
+
+This is where I'm at as of 2021/07/13. To Be Continued.
+
 ## First layout
 
 After working with [Keyboard Layout Editor](http://www.keyboard-layout-editor.com) and [QMK Configurator](https://config.qmk.fm) to try things out, I've made a few decisions/discoveries:
@@ -35,6 +102,14 @@ So, here's where I'm at, and thoughts on why:
 ![image](https://user-images.githubusercontent.com/15177870/121795611-f1cbbb00-cbd7-11eb-853f-a9d51dadce1c.png)
 
 [Key caps from kbdfans](https://kbdfans.com/products/pbt-sa-control-code-keycaps-set)
+
+NOTE: After receiving them I found that they don't have a homing mark on `F` and `J`. After looking
+around I found two options: [Ball Bearing
+Mods](https://blog.techotom.com/post/2018-02-03-ball-bearing-homing-bumps-on-keycaps/) (which seem
+like an awesome-but-more-destructive-than-I-want for these caps) and [Just use a piece of
+tape](https://superuser.com/questions/212968/what-is-the-best-way-to-create-tactile-bumps-on-your-keyboardhttps://superuser.com/questions/212968/what-is-the-best-way-to-create-tactile-bumps-on-your-keyboardhttps://superuser.com/questions/212968/what-is-the-best-way-to-create-tactile-bumps-on-your-keyboardhttps://superuser.com/questions/212968/what-is-the-best-way-to-create-tactile-bumps-on-your-keyboardv).
+
+I'm going with the tape option for now, but that ball-bearing idea is intriguing.
 
 ### Layer 0 (ALL YOUR BASE ARE BELONG TO KEEB)
 
