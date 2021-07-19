@@ -87,7 +87,67 @@ square-pegged male connectors I have won't work.
 
 This is where I'm at as of 2021/07/13. To Be Continued.
 
+## 2021/7/19
+I'm actually (slowly) typing this from the Sofle!
+
+The pins that I mentioned in the last update arrived and I discovered that some projects use a _pin
+pitch_ (distance between the pins) of 2.54mm (like most Arduino/Pro-Micro projects), and others use
+2.0. As you might imagine, they are not compatible. And yes, I had ordered the wrong pins, so I
+ordered the correct pins and told my brother about my HILARIOUS escapades.
+
+I also told him that, knowing myself, I'd likely also give in to the urge to make the halves
+symmetric by removing the ProMicro from the Left side, too, and socketing it. He offered to save me
+from myself and remove the board for me.
+
+In retrospect, it was probably the decision that saved the largest amount of time in the whole
+project. He picked up the board in the morning, and had it back to me at the exact same time as the
+correct pins.
+
+I deftly soldered the sockets into the PCB, the headers onto the ProMicros, and put it all together to
+FINALLY see the right-half SEND KEYSTROKES!
+
+You know, only when connected via USB. When connected via TRRS nothing would be sent. [Heading back
+to reddit](https://www.reddit.com/r/olkb/comments/om5bds/sofle_v2_trrs_troubleshooting_help/) got me
+pointed in the right direction and I was able to figure out that while I was desoldering the
+ProMicro from the right side I destroyed the trace for the D2/Rx pin on the PCB. The bright side of
+this as a failure point is that solution was simply soldering a wire from the TRRS pad to the pin
+itself. TODO PUT IMAGE HERE
+
+And now everything works! TODO: PUT IMAGE HERE!
+
+## Observations
+
+### Hurdles
+
+I learned to type wrong, I think. I frequently used my right index finger to press `b`, but with the
+sofle that'd be quite a reach :)
+
+That's a pretty small issue, though, when compared to the fact that I've ALWAYS used my left pointer
+finger to push `c`. This dramatically throws off `c`, `v`, and `b` in an Ortho layout. That'll be
+the largest learning curve in this process.
+
+Other complications are remembering that my left thumb can't hit `space` (resulting in a lot of
+prematurely sent messages), and attempting to hit the old locations for `ESC` and `BACKSPACE`.
+
+### Victories
+
+The biggest wins so far are mostly on the **MOUSE** layer, which is a bit surprising considering how
+busy that layer ended up being. Controlling the mouse with `WASD`-type controls (`ESDF`,
+technically) is incredibly useful, and having `HJKL` as arrow keys is everything I'd hoped it would
+be.
+
+Also, flashing the firmware quickly means that I don't ingrain any bad habits by using the wrong
+keys for too long. I do wish I could flash both keyboards without having to play musical chairs with
+cords, but ¯\\_(ツ)\_\/¯.
+
+And good goat do my back and neck feel better already. Like, **__WAY__** better.
+
 ## First layout
+
+## First layout - DRAFT
+
+I created this layout while planning the build; see if you can spot the differences!
+#nerdSpotTheDifference
 
 After working with [Keyboard Layout Editor](http://www.keyboard-layout-editor.com) and [QMK Configurator](https://config.qmk.fm) to try things out, I've made a few decisions/discoveries:
 
