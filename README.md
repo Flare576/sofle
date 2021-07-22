@@ -129,6 +129,8 @@ the largest learning curve in this process.
 Other complications are remembering that my left thumb can't hit `space` (resulting in a lot of
 prematurely sent messages), and attempting to hit the old locations for `ESC` and `BACKSPACE`.
 
+I'd really like to be able to flash both sides of the keyboard without flipping cords around.
+
 ### Victories
 
 The biggest wins so far are mostly on the **MOUSE** layer, which is a bit surprising considering how
@@ -170,6 +172,9 @@ like an awesome-but-more-destructive-than-I-want for these caps) and [Just use a
 tape](https://superuser.com/questions/212968/what-is-the-best-way-to-create-tactile-bumps-on-your-keyboardhttps://superuser.com/questions/212968/what-is-the-best-way-to-create-tactile-bumps-on-your-keyboardhttps://superuser.com/questions/212968/what-is-the-best-way-to-create-tactile-bumps-on-your-keyboardhttps://superuser.com/questions/212968/what-is-the-best-way-to-create-tactile-bumps-on-your-keyboardv).
 
 I'm going with the tape option for now, but that ball-bearing idea is intriguing.
+
+21/07/21 - Tape came off while playing games. Only used scotch tape, so maybe another type would
+work.
 
 ### Layer 0 (ALL YOUR BASE ARE BELONG TO KEEB)
 
