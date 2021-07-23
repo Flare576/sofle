@@ -146,6 +146,21 @@ And good goat do my back and neck feel better already. Like, **__WAY__** better.
 
 ## First layout
 
+![image](https://lh3.googleusercontent.com/pw/AM-JKLVr-XJRkMWg79y4RWsEhTycdLUstjloWZONWSj9at_w_N3zI0L1dtLOyxpfbjQnUZdlfp2QZRNzWEg_KquBZtGhaq5TsABN5fU--JM3NCtFjM0es59A7AL1kjqVtX3ZoyTwLahqcwOi3ASsf3rVCko2zA=w3584-h1744-no?authuser=0)
+> Final key positioning  
+> I'm not 100% on the green keys; they're actually a different profile and _significantly_ shorter
+than the other caps. I'm switching back and forth and can't really tell the difference when typing
+normally, but I like the look of the normal caps better so far; we'll see.
+
+
+![image](https://lh3.googleusercontent.com/pw/AM-JKLV-JeUnb_izO9pUVwFPxlse9JRx-3LEAL8htDuyduDu5u8-nLQfQmPExzm1UADlPz2G5xmZQztoJjEamzJdmF9a_KVXdaFNtVHbv0sn5l5GUf3S5h0G1wxBMUkpOgyubxqIAO19YNyqci9HNV0OHdpLCA=w3584-h1744-no?authuser=0)
+> Final Switch Positioning  
+> Note: All switches are no-tactile and no-clicky with silver being 45g, black 60g, and yellow 75g.
+The one black switch on the far right was due to `-/_` triggering `\/|` too frequently. It's been
+working out well so far!
+
+
+
 ## First layout - DRAFT
 
 I created this layout while planning the build; see if you can spot the differences!
