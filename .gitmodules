@@ -6,7 +6,11 @@
 	path = caps
 	url = https://gist.github.com/Flare576/fb8b42a6156458e20ca421a6f80cec48
 	branch = master
-[submodule "qmk_config"]
-	path = qmk_config
-	url = https://gist.github.com/Flare576/a3439a5d853a082698f74ef1b8b15ba5
-	branch = master
+[submodule "qmk_firmware"]
+	path = qmk_firmware
+	url = https://github.com/Flare576/qmk_firmware.git
+	branch = flare576-new-sofle-layout
+[submodule "qmk_configurator"]
+	path = qmk_configurator
+	url = https://github.com/Flare576/qmk_configurator.git
+	branch = flare576-sofle-mapping

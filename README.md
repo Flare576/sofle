@@ -18,7 +18,7 @@ ortholinear, or QMK, or really even C++.
 
 In the end, though, I'm **VERY** pleased with how things turned out!
 
-![Sofle V2 with tan keycaps featuring standard alpha numerics and assorted novelty keys](https://lh3.googleusercontent.com/pw/AM-JKLVr-XJRkMWg79y4RWsEhTycdLUstjloWZONWSj9at_w_N3zI0L1dtLOyxpfbjQnUZdlfp2QZRNzWEg_KquBZtGhaq5TsABN5fU--JM3NCtFjM0es59A7AL1kjqVtX3ZoyTwLahqcwOi3ASsf3rVCko2zA=w3584-h1744-no?authuser=0)
+![Sofle V2 with tan keycaps featuring standard alpha numerics and assorted novelty keys](images/glam.jpg)
 [Key caps from kbdfans](https://kbdfans.com/products/pbt-sa-control-code-keycaps-set)
 
 After receiving them I found that they don't have a homing mark on `F` and `J`. After looking
@@ -91,16 +91,10 @@ Only slightly-odd key on the bottom is the `Alt+Shift` key, which is my "Meta" k
 This has ended up being my most useful layer. The Green keys are a fantastic stand-in for when I
 just need a quick thing done with the mouse (webpage that doesn't support
 [Vimium](https://vimium.github.io/), for example), the blue keys are VIM keys for things that need
-arrows, and the yellow keys are part of an overall "brackets" concept for coding where:
+arrows.
 
-| Combo | `,`/`.` |
-|-------|-----|
-| Shift | `<`/`>` |
-| Mouse | `[`/`]` |
-| Shift + Mouse | `{`/`}` |
-| Esc | `(`/`)` |
-
-It hasn't really sunk in yet, though, so I'm considering it a work in progress.
+VIM uses `CTRL+W` as a prefix for a lot of graphical operations, and tmux `ALT+A`, so throwing these
+in to see how I like them on row 1.
 
 Lastly, my KVM switch is triggered by Ctrl+Ctrl+[`1`/`2`], so the two macro keys on the right take
 care of that.
@@ -109,31 +103,37 @@ care of that.
 
 ![Layer2](images/layer_2_syms.png)
 
-VIM uses `CTRL+W` as a prefix for a lot of graphical operations, and tmux `ALT+A`, so throwing these
-in to see how I like them.
+The original idea for this layer was inspired by [tomsaleeba/ergoslab](https://github.com/tomsaleeba/ergoslab)'s bracket layer, but my brain just couldn't get it to stick...
 
-The bottom left macros are similar. where `,`+`\\n` is VIM full screen, and `ALT+A`+`\\n` is tmux
-full screen.
+Until I added the bottom layer on the left. Now making Markdown links is:
 
-### 3 (Media)
+```
+ESC+k
+Name of link
+ESC+ l i v o
+```
+`l` puts in the ], `i` does (, `v` pastes the URL, then `o` closes the ). Magic.
 
-![Layer3](images/layer_3_mdia.png)
+The FN keys are because they didn't have anywhere else to live after the most recent redesign.
 
-Nothing special, and pretty useless for now.
+### 3 (FFXIV)
 
+![Layer3](images/layer_3_ffxiv.png)
 
-### 4 (NumPad)
+Basically disables some of the keys that are bad for gaming (Tab/Alt Tap, Esc/Sym) and adds printsc.
 
-![Layer4](images/layer_4_npad.png)
+I could probably simplify this to a flag eventually...
 
-Haven't used this layer yet, but logically I should probably flip the sides around... we'll see.
+### 4 (Gamez)
 
-### 5 (Gamez)
+![Layer4](images/layer_4_esdf.png)
 
-![Layer5](images/layer_5_game.png)
+Ortholinear WASD is even weirder than normal, so shifting the keys to the right was a necessity.
 
-Ortholinear WASD is even weirder than normal, so shifting the keys to the right was a necessity. I
-thought that keeping my hands in the same position would also help when flipping between Game/Base to type, but I'm terrible at it anyway. Additionally, the right-half as action hot-keys (where I don't have to unmap the default UI shortcuts or whatever) is rough. Entire thing is a WIP.
+After playing for a while, I realized shifting the top and bottom rows were unnecessary and
+confusing. Additionally, the left-side is sorta a passive hotkey system; by default games don't
+acknowledge the CTRL key is pressed, so the key just registers as the alpha, but if you're setting a
+custom mapping, it'll see it and you'll have a new hotkey.
 
 ## Observations
 
@@ -161,3 +161,5 @@ keys for too long. I do wish I could flash both keyboards without having to play
 cords, but ¯\\_(ツ)\_\/¯.
 
 And good goat do my back and neck feel better already. Like, **__WAY__** better.
+
+// Dev note: regex for firmware->configurator:'<,'>s%\v([^, ]+)%"\1"%g
