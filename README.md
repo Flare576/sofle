@@ -77,12 +77,12 @@ been working out well so far!
 
 ![Layer0](images/layer_0_base.png)
 
-Top-left has two Tap/Hold keys, one for `~`/`MEDIA` and under it `Tab`/`Alt` (I've had my CapsLock
-bound to Alt for a while).
+Top-left has one Tap/Hold key for `Tab`/`Alt` (I've had my CapsLock bound to Alt for a while).
 
 Bottom right has a `=`/`Shift` Tap/Hold.
 
-Only slightly-odd key on the bottom is the `Alt+Shift` key, which is my "Meta" key for tmux/Firefox
+Both `Esc` and `Enter` act as layer shifts, and there's a `Alt+Shift` key, which is my "Meta" key
+for tmux/Firefox
 
 ### 1 (Mouse)
 
@@ -131,7 +131,7 @@ I could probably simplify this to a flag eventually...
 Ortholinear WASD is even weirder than normal, so shifting the keys to the right was a necessity.
 
 After playing for a while, I realized shifting the top and bottom rows were unnecessary and
-confusing. Additionally, the left-side is sorta a passive hotkey system; by default games don't
+confusing. Additionally, the right-side is sorta a passive hotkey system; by default games don't
 acknowledge the CTRL key is pressed, so the key just registers as the alpha, but if you're setting a
 custom mapping, it'll see it and you'll have a new hotkey.
 
@@ -146,7 +146,7 @@ That's a pretty small issue, though, when compared to the fact that I've ALWAYS 
 finger to push `c`. This dramatically throws off `c`, `v`, and `b` in an Ortho layout. That'll be
 the largest learning curve in this process.
 
-Other complications are remembering that my left thumb can't hit `space` (resulting in a lot of
+Other complications are remembering that my right thumb can't hit `space` (resulting in a lot of
 prematurely sent messages), and attempting to hit the old locations for `ESC` and `BACKSPACE`.
 
 ### Victories
