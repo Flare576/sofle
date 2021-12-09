@@ -3,7 +3,7 @@ Tracking my adventures in split-keyboard land with the Sofle V2 with design choi
 influenced by  [tomsaleeba/ergoslab](https://github.com/tomsaleeba/ergoslab) as well as the original
 [josefadamicik/SofleKeyboard](https://github.com/josefadamcik/SofleKeyboard) projects, as well as
 other layouts I find as I look around.
-
+ 
 ## Introduction
 
 Until this project, I had never worked on a real soldering project, so there were a lot of, shall we
@@ -19,15 +19,16 @@ ortholinear, or QMK, or really even C++.
 In the end, though, I'm **VERY** pleased with how things turned out!
 
 ![Sofle V2 with tan keycaps featuring standard alpha numerics and assorted novelty keys](images/glam.jpg)
-[Key caps from kbdfans](https://kbdfans.com/products/pbt-sa-control-code-keycaps-set)
+- [Key Layout](http://www.keyboard-layout-editor.com/#/gists/fb8b42a6156458e20ca421a6f80cec48) via Keyboard Layout Editor 
+- [Key Caps](https://kbdfans.com/products/pbt-sa-control-code-keycaps-set) available via from kbdfans
 
-After receiving them I found that they don't have a homing mark on `F` and `J`. After looking
-around I found two options: [Ball Bearing Mods](https://blog.techotom.com/post/2018-02-03-ball-bearing-homing-bumps-on-keycaps/) (which seem
-like an awesome-but-more-destructive-than-I-want for these caps) and [Just use a piece of tape](https://superuser.com/questions/212968/what-is-the-best-way-to-create-tactile-bumps-on-your-keyboardv).
-
-I started with the tape, but it came off because I slide my fingers when gaming. For right now I'm
-going without homing indicators, which is working because each side has sort of a natural centering
-feel with the horizontal key count and dials.
+> A note on the caps: they don't have  a homing mark on `F` and `J`, but after using them for a
+> while I've found homing marks unnecessary due to the *SA* profile, knobs, and layout.
+>
+> If you want to add homing indicators, I found two options:
+> -  [Ball Bearing Mods](https://blog.techotom.com/post/2018-02-03-ball-bearing-homing-bumps-on-keycaps/) (which seem
+> like an awesome-but-more-destructive-than-I-want for these caps) 
+> - [Just use a piece of tape](https://superuser.com/questions/212968/what-is-the-best-way-to-create-tactile-bumps-on-your-keyboardv) (which slid off after a day or two for me)
 
 ## Key learnings
 
@@ -72,6 +73,9 @@ black switch on the far right was due to reaching for `-/_` triggering `\/|` too
 been working out well so far!
 
 ## Layers
+
+![Chord Guide](images/chords.png)  
+Via ([Keyboard Layout Manager](http://www.keyboard-layout-editor.com/#/gists/884e3bc833cdf80fed9337ffee93a500))
 
 ### 0 (Base)
 
