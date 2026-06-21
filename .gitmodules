@@ -14,3 +14,9 @@
 	path = qmk_configurator
 	url = https://github.com/Flare576/qmk_configurator.git
 	branch = flare576-sofle-mapping
+[submodule "zmk-config"]
+	path = zmk-config
+	url = https://github.com/Flare576/zmk-config.git
+[submodule "SofleKeyboard"]
+	path = SofleKeyboard
+	url = https://github.com/Flare576/SofleKeyboard.git
