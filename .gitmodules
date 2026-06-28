@@ -6,11 +6,9 @@
 	path = caps
 	url = https://gist.github.com/Flare576/fb8b42a6156458e20ca421a6f80cec48
 	branch = master
-[submodule "qmk_firmware"]
-	path = qmk_firmware
-	url = https://github.com/Flare576/qmk_firmware.git
-	branch = flare576-new-sofle-layout
-[submodule "qmk_configurator"]
-	path = qmk_configurator
-	url = https://github.com/Flare576/qmk_configurator.git
-	branch = flare576-sofle-mapping
+[submodule "zmk-config"]
+	path = zmk-config
+	url = https://github.com/Flare576/zmk-config.git
+[submodule "SofleKeyboard"]
+	path = SofleKeyboard
+	url = https://github.com/Flare576/SofleKeyboard.git
